@@ -1,0 +1,183 @@
+* {margin: 0; padding: 0; list-style: none;}
+a {text-decoration: none;}
+img {max-width: 100%; height: auto;}
+
+#header {border-top: 3px solid #00d344;}
+#header .wrap {border-bottom: 1px solid #999;}
+#header .wrap .top {margin: 0 auto; width: 1008px; overflow: hidden;}
+#header .wrap .top .top_left {float: left; padding: 11px 7px;}
+#header .wrap .top .top_right {float: right;}
+.top_right ul li {display: inline; border-left: 1px solid #999;}
+.top_right ul li a {display: inline-block; color: #999; font-weight: 700; padding: 11px 7px;}
+.top_right ul li a span {}
+
+#header .wrap .mid {margin: 0 auto; width: 1008px; overflow: hidden;}
+.mid .mid_left {float: left;}
+.mid .mid_right {float: right; margin-top: 10px;}
+.mid fieldset {
+    width: 330px;
+    height: 40px;
+    border: none;
+    margin: 36px 0 0 11px;
+    background-image: url('img/melon_search.png');
+    overflow: hidden;
+}
+.mid fieldset input {
+    float: left;
+    border: none;
+    margin: 7px 0 0 18px;
+    width: 260px;
+    height: 25px;
+}
+.mid fieldset button {
+    float: right;
+    height: 40px;
+    width: 45px;
+    background-image: url('img/melon_btn.png');
+    background-color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+#header .wrap .bottom {
+    margin: 0 auto;
+    width: 1008px;
+    overflow: hidden;
+}
+.bottom .main_gnb {float: left;}
+.bottom .main_gnb li {display: inline;}
+.bottom .main_gnb li a {
+    display: inline-block; 
+    width: 75px; 
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700; 
+    text-align: center;
+    color: #000;
+}
+.bottom .sub_gnb {float: right;}
+.bottom .sub_gnb li a {
+    font-size: 15px;
+    font-weight: 700; 
+    color: #000;
+    display: inline-block;
+    width: 75px; 
+    height: 40px;
+    text-align: center;
+}
+
+/**************************section**************************/
+#section .wrap {
+    width: 1008px;
+    margin: 0 auto;
+}
+#section .conts {
+    overflow: hidden;
+}
+#section .conts .list_wrap {width: 480px; float: left; }
+#section .conts .slide_wrap {width: 236px; float: left; margin-left: 4px;}
+#section .conts .user_wrap {width: 280px; float: left; border: 1px; margin-left: 8px;}
+
+#section .conts .list_wrap ul {overflow: hidden;}
+#section .conts .list_wrap ul li {
+    float: left; 
+    width: 33.3333%; 
+    height: 159px; 
+    /* border: 1px solid #777; */
+    box-sizing: border-box;
+    position:relative;
+}
+
+#section .conts .list_wrap ul li a{
+    position:relative;
+}
+#section .conts .list_wrap ul li .singer{
+    position:absolute;
+    bottom:4px;
+    left:0;
+    width:100%;
+    height:22px;
+    line-height:22px;
+    background-color: #000;
+    color: white;
+    text-align: center;
+    font-size: 14px;
+}
+
+#section .conts .list_wrap ul li .hover_cont{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width:156px;
+    height:156px;
+    background-color: rgb(0,0,0,0.7);
+    color:white;
+    text-align: center;
+    opacity: 0; /* 투명도 0 */
+    transition: opacity 0.25s ease-in-out; /* 애니메이션: 속성 / 초 단위 / 작동방법*/
+}
+
+#section .conts .list_wrap ul li:hover > .hover_cont{
+    opacity: 1;
+}
+
+#section .conts .list_wrap ul li .hover_cont a{
+    margin-top: 55px;
+    display: block;
+    color: white;
+    font-weight: 500;
+    font-size: 15px;
+}
+
+#section .user_wrap .login_wrap {
+    border: 1px solid #777;
+    height: 118px;
+    margin-bottom: 8px; 
+    padding: 0 15px;
+    
+}
+#section .user_wrap .promo_wrap {
+/*     border: 1px solid #777; 
+    height: 155px;  */
+}
+
+#section .login_wrap .top {overflow: hidden; margin-top: 30px;}
+#section .login_wrap .top .left {float: left; font-size: 13px; color: #555;}
+#section .login_wrap .top .right {float: right; font-size: 13px; color: #555;}
+#section .login_wrap .login_btn {
+    background-color: #00d344;
+    width: 100%;
+    border: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 15px;
+    padding: 10px 0;
+    margin-top: 10px;
+}
+
+/***************************** footer ********************************/
+
+#footer .popular{
+    width:860px;
+    overflow: hidden;
+    margin: 0 auto;
+    border-bottom:1px solid #555;
+}
+
+#footer .popular .title{
+    float:left;
+    font-weight:700;
+    font-size: 18px;
+    padding-top:10px;
+}
+
+
+#footer .popular .sub{
+    float:left;
+    padding-left:12px;
+    padding-top:18px;
+    font-size: 13px;
+}
+
+
+
