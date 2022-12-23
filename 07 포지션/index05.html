@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+    
+
+        .box{
+            border: 2px solid black;
+            margin:0 auto;
+            width: 500px;
+            position: relative;
+            padding: 20px;
+         
+
+        }
+
+        .img {position: absolute;}
+    
+
+        .text_box{
+            overflow: hidden;
+            padding-left:100px;
+           
+        }
+
+        .text_box textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 250px;
+            resize: vertical;
+        }
+
+        .text_box .text{float:left;}
+
+        .text_box .btn{
+            float:right;
+            /* width:150px;
+            height: 25px; */
+        }
+
+
+        .text input {
+            display: block;
+            margin-bottom:5px;
+        }
+
+
+        .title_img {position: absolute;}
+
+        .title_img img{width: 50px;}
+
+
+        .title span{display: block;}
+
+        .box2{
+            padding-left: 130px;
+            overflow: hidden;
+            position:relative;
+            box-sizing: border-box;
+        }
+
+        .box2 .title{
+            float: left;
+           
+        }
+        
+        .box .title .t{
+            font-weight: bold;
+            padding-bottom: 5px;
+            font-size: large;
+        }
+
+        .box2 .delete{float: right;}
+
+        .box2 .update{float: right;}
+
+    </style>
+
+</head>
+
+
+
+<body>
+    
+    <div class="box"><!-- margin: 0 auto -->
+        <div class="img"><!-- 포지션 -->
+            <img src="img/bgimg.png" alt="이미지">
+        </div>
+
+        <div class="text_box"> <!-- 패딩left -->
+            <textarea></textarea>
+            <div class="text">
+                <input type="text">
+                <input type="text">
+            </div>
+            <button type="button" class="btn">등록</button><!-- float: right -->
+        </div>
+    </div>
+
+
+
+
+    <div class="box">
+        <div class="title_img">
+            <img src="img/bgimg.png" alt="이미지">
+        </div>
+        <div class="box2">
+
+            <div class="title">
+                <span class="t">제목</span>
+                <span class="c">내용</span>
+            </div>
+            <div>
+                <button type="button" class="delete">삭제</button>
+                <button type="button" class="update">수정</button>
+            </div>
+        </div>
+
+
+    </div>
+</body>
+</html>
