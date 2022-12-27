@@ -1,120 +1,64 @@
+* {padding: 0; margin: 0; line-height: none;}
+img {max-width: 100%; height: auto;}
+.btn {border-radius: 0;}
+.form-control {border-radius: 0;}
 
-*{margin:0; padding:0; list-style: none;box-sizing: border-box;}
-img{max-width: 100%; height: auto;}
 
 
-#main {
-    width:1080px;
-    margin: 0 auto;
+.detail {min-height: 370px;}
+.detail .title{font-size: 25px;}
+.detail .price{
+    font-size: 25px; 
+    font-weight: 700; 
+    border-top: 1px solid #ddd; 
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0;
+
 }
+.detail .deliver{font-size: 12px; color: #888;}
 
-/* "상세보기" 구현 */
-.title{
-    border-bottom: 1px solid rgb(216, 216, 216);
-    margin: 15px 0 15px 0;
+
+.detail-control .price,
+.detail-control .order  {
+    overflow: hidden;
 }
+.detail-control .price .left {float: left; font-weight: 500; height: 29px; line-height: 29px;}
+.detail-control .price .right {float: right; font-size: 20px; font-weight: 700; height: 29px;}
 
-.title h3 >span{
-    font-size: 20px;
-    color: #777;
-}
-
-/* 상품 설명 구현 */
-
-.container{overflow: hidden; width: 100%; padding: 0;}
-
-.container .product {
-    float: left;
-    padding: 0;
-       
-}
-
-.container .content {
-    float: left;}
+.detail-control .order .left {float: left; width: 50%; padding: 10px 0;}
+.detail-control .order .right {float: right; width: 50%; padding: 10px 0;}
 
 
-.container .content h1{
-    padding:15px 0 15px 0;
-    border-top: 1px solid rgb(216, 216, 216);
-    border-bottom: 1px solid rgb(216, 216, 216);
-    font-weight: bolder;
-}
-
-.container .content li {
-    color: #777;
-}
-
-.content .checkout{overflow: hidden; }
-
-.content .checkout p{
-    float: left;
-    font-size: 15px;
-    font-weight: 700;
-    margin-top: 50px;
-}
-
-.content .checkout h2{
-    float:right;
-    margin-top: 50px;
-    font-weight: 700;
-}
-
-/* 버튼 구현 */
-.btn {overflow: hidden; width:100%; padding:0;}
-
-.btn .list{
-    float: left;
-    width:50%;
-    height:50px;
-    margin: 0 auto;
-    border-radius: 0;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-
-.btn .buy{
-    float: right;
-    width:50%;
-    height:50px;
-    margin: 0 auto;
-    border-radius: 0;
-    font-size: 15px;
-    font-weight: 500;
-}
-
-/* 댓글 작성 구현 */
-
-.container-fluid {
-    margin-top:70px;
-    width:100%;
-    height: 200px;
-    line-height: 200px;
-    border: 1px solid rgb(216, 214, 214);
-    background-color: rgb(241, 241, 241);
-    
-}
-
-.container-fluid .box{
+/* *****댓****** */
+.reply-wrap {
+    border: 1px solid #ddd;
+    background-color: #f5f5f5;
     position: relative;
+    padding: 15px;
 }
 
-.container-fluid .box img {
+.reply-img {
     position: absolute;
-    padding:20px 0 0 20px;
-    top: 0;
-    left: 0;
+    left: 15px;
+    top:15px;
+}
+.reply-content {
+    padding-left: 55px;
+}
+.reply-content textarea {
+    resize: vertical;
+    height: 70px;
+    margin-bottom: 5px;
+    transition: all .3s ease-in-out;
+}
+.reply-content textarea:focus {
+    height: 150px;
+}
+.reply-control {overflow: hidden;}
+.reply-control .left {float: left;}
+.reply-control .left input:nth-child(1) {
+    margin-bottom: 5px;
 }
 
-.container-fluid .box textarea{
-    position: absolute;
-    top: 0;
-    left: 0;
-    width:90%;
-    height: 80px;
-    margin-top: 20px;
-    margin-left:80px; 
-    border-color:rgb(180, 180, 180);
-}
-
+.reply-control .right {float: right;}
 
